@@ -1,4 +1,4 @@
-git clone -b dev https://github.com/TeamUltroid/Ultroid /root/TeamUltroid
+git clone -b beta https://github.com/TeamUltroid/Ultroid /root/TeamUltroid
 cp .env /root/TeamUltroid/.env
 cd /root/TeamUltroid
 pip3 install cfscrape
