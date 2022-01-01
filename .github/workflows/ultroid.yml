@@ -30,9 +30,7 @@ jobs:
            echo "https://realeu:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
        - name: cloning repo
          continue-on-error: true
-         run: |
-           wget https://raw.githubusercontent.com/TeamUltroid/Ultroid/dev/Dockerfile
-           wget -O .env ${{ secrets.ENV_FILE }}
+         run: wget -qO .env ${{ secrets.ENV_FILE }}
        - name: Running Ultroid
          timeout-minutes: 330
          continue-on-error: true
